@@ -434,6 +434,8 @@ function start() {
             $("#energia").css("background-image", "url(assets/imgs/energia0.png)");
 
             //Game Over
+            gameOver();
+
         }
 
     } // Fim da função energia()
@@ -459,3 +461,12 @@ function start() {
 
 
 }
+
+
+//Reinicia o Jogo
+function reiniciaJogo() {
+    somGameover.pause();
+    $("#fim").remove();
+    start();
+
+} //Fim da função reiniciaJogo
